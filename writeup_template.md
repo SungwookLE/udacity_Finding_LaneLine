@@ -62,7 +62,8 @@ Another potential improvement could be to ...
 
 ### 4. def region_of_interest(img, vertices)
 * mask = np.zeros_like(img) works that make the zero padding image size as img
---- 
+---
+ """
 if len(img.shape) > 2:
         channel_count = img.shape[2]  # i.e. 3 or 4 depending on your image
         ignore_mask_color = (255,) * channel_count
@@ -80,6 +81,7 @@ is for making the white (true) image mask. It is used as mask region selection w
 ### 6. def hough_lines(img, rho, theta, threshold, min_line_len, max_line_gap)
 * Returns an image with hough line drawn
 ---
+ """
 lines = cv2.HoughLinesP(img, rho, theta, threshold, np.array([]), minLineLength=min_line_len, maxLineGap=max_line_gap)
     line_img = np.zeros((img.shape[0], img.shape[1], 3), dtype=np.uint8)
     draw_lines(line_img, lines)
@@ -99,7 +101,7 @@ lines = cv2.HoughLinesP(img, rho, theta, threshold, np.array([]), minLineLength=
     
     initial_img * α + img * β + γ
     NOTE: initial_img and img must be the same shape!
-    """
+    
     return cv2.addWeighted(initial_img, α, img, β, γ)
 ---
 * blend the two image with weighting parameter
