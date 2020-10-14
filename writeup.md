@@ -38,14 +38,14 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ![alt text][image1]
 
 Also, In Video, this algorithm works properly
-![alt text][video1]
-![alt text][video2]
+![video_1][video1]
+![video_2][video2]
 
 ### 2. Identify potential shortcomings with your current pipeline
 
 I found that this algorithm have some shortcoming to find the curve.
 You can check the following video.
-![alt text][video3] 
+![video_challenge][video3] 
 
 ### 3. Suggest possible improvements to your pipeline
 
