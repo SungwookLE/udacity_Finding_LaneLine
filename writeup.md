@@ -92,7 +92,7 @@ is for making the white (true) image mask. It is used as mask region selection w
 
 * hough can find the line 'a' and 'b' domain in 'y=ax+b', not x and y domain
 
-### 7. deg weighted_img(img, initial_img, alpha, beta, gamma) 
+### 7. def weighted_img(img, initial_img, alpha, beta, gamma) 
 
     `img` is the output of the hough_lines(), An image with lines drawn on it.
     Should be a blank image (all black) with lines drawn on it.
